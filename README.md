@@ -74,8 +74,8 @@ Licensed under [MIT](http://shannonmoeller.com/mit.txt)
 [downloads-img]: http://img.shields.io/npm/dm/async-map-stream.svg?style=flat-square
 [gitter-img]:    http://img.shields.io/badge/gitter-join_chat-1dce73.svg?style=flat-square
 [gitter-url]:    https://gitter.im/togajs/toga
-[npm-img]:       http://img.shields.io/npm/v/tunic.svg?style=flat-square
-[npm-url]:       https://npmjs.org/package/tunic
+[npm-img]:       http://img.shields.io/npm/v/async-map-stream.svg?style=flat-square
+[npm-url]:       https://npmjs.org/package/async-map-stream
 [travis-img]:    http://img.shields.io/travis/shannonmoeller/async-map-stream.svg?style=flat-square
 [travis-url]:    https://travis-ci.org/shannonmoeller/async-map-stream
 [waffle-img]:    http://img.shields.io/github/issues/shannonmoeller/async-map-stream.svg?style=flat-square
