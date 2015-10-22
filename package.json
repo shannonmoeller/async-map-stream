@@ -11,13 +11,15 @@
     "url": "git+https://github.com/shannonmoeller/through2-obj.git"
   },
   "keywords": [
-    "through",
-    "through2",
     "async",
     "done",
-    "promise",
     "observable",
-    "streams"
+    "map",
+    "promise",
+    "streams",
+    "through",
+    "through2",
+    "transform"
   ],
   "author": "Shannon Moeller <me@shannonmoeller.com> (http://shannonmoeller.com)",
   "license": "MIT",
