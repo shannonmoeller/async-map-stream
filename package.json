@@ -2,15 +2,6 @@
   "name": "async-map-stream",
   "version": "1.0.2",
   "description": "A version of map-stream with support for callbacks, promises, observables and streams.",
-  "main": "index.js",
-  "scripts": {
-    "coveralls": "cat coverage/lcov.info | coveralls",
-    "test": "istanbul cover ./node_modules/.bin/ava -- test/*.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shannonmoeller/async-map-stream.git"
-  },
   "keywords": [
     "async",
     "done",
@@ -22,12 +13,15 @@
     "through2",
     "transform"
   ],
-  "author": "Shannon Moeller <me@shannonmoeller.com> (http://shannonmoeller.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shannonmoeller/async-map-stream/issues"
-  },
   "homepage": "https://github.com/shannonmoeller/async-map-stream#readme",
+  "bugs": "https://github.com/shannonmoeller/async-map-stream/issues",
+  "license": "MIT",
+  "author": "Shannon Moeller <me@shannonmoeller.com> (http://shannonmoeller.com)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shannonmoeller/async-map-stream.git"
+  },
   "dependencies": {
     "async-done": "^1.1.1",
     "stream-array": "^1.1.1",
@@ -39,5 +33,9 @@
     "es6-promise": "^3.0.2",
     "istanbul": "^0.4.0",
     "rx": "^4.0.6"
+  },
+  "scripts": {
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "test": "istanbul cover ./node_modules/.bin/ava -- test/*.js"
   }
 }
