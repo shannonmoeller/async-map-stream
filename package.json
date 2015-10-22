@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shannonmoeller/through2-obj.git"
+    "url": "git+https://github.com/shannonmoeller/async-map-stream.git"
   },
   "keywords": [
     "async",
@@ -25,9 +25,9 @@
   "author": "Shannon Moeller <me@shannonmoeller.com> (http://shannonmoeller.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shannonmoeller/through2-obj/issues"
+    "url": "https://github.com/shannonmoeller/async-map-stream/issues"
   },
-  "homepage": "https://github.com/shannonmoeller/through2-obj#readme",
+  "homepage": "https://github.com/shannonmoeller/async-map-stream#readme",
   "dependencies": {
     "async-done": "^1.1.1",
     "stream-array": "^1.1.1",
