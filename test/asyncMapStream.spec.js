@@ -26,14 +26,6 @@ it('should transform with a callback', function (test) {
         }));
 });
 
-/*
- * Currently `async-done` doesn't support returning values from observables, so
- * this use case is pretty much dead in the water. If you really need this, feel
- * free to push for it in the related PR:
- *
- *     https://github.com/phated/async-done/pull/28
- *
- * /
 it('should transform with an observable', function (test) {
     test.plan(2);
 
@@ -51,7 +43,6 @@ it('should transform with an observable', function (test) {
             return Observable.return(obj);
         }));
 });
-/* */
 
 it('should transform with a promise', function (test) {
     test.plan(2);
