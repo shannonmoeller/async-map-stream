@@ -4,7 +4,8 @@
   "description": "A version of map-stream with support for callbacks, promises, observables and streams.",
   "main": "index.js",
   "scripts": {
-    "test": "ava test/*.js"
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "test": "istanbul cover ./node_modules/.bin/ava -- test/*.js"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,9 @@
   },
   "devDependencies": {
     "ava": "^0.2.0",
+    "coveralls": "^2.11.4",
     "es6-promise": "^3.0.2",
+    "istanbul": "^0.4.0",
     "rx": "^4.0.6"
   }
 }
