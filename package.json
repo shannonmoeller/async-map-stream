@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "async-done": "^1.1.1",
-    "stream-array": "^1.1.1",
     "through2": "^2.0.0"
   },
   "devDependencies": {
@@ -32,7 +31,8 @@
     "coveralls": "^2.11.4",
     "es6-promise": "^3.0.2",
     "istanbul": "^0.4.0",
-    "rx": "^4.0.6"
+    "rx": "^4.0.6",
+    "stream-array": "^1.1.1"
   },
   "scripts": {
     "coveralls": "cat coverage/lcov.info | coveralls",
