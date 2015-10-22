@@ -2,7 +2,7 @@
 
 [![NPM version][npm-img]][npm-url] [![Downloads][downloads-img]][npm-url] [![Build Status][travis-img]][travis-url] [![Coverage Status][coveralls-img]][coveralls-url] [![Chat][gitter-img]][gitter-url] [![Tip][amazon-img]][amazon-url]
 
-A version of `map-stream` that supports callbacks, promises, observables, and streams. Always uses [`objectMode`][mode]
+A version of `map-stream` that supports callbacks, promises, observables, and streams. Always uses [`objectMode`][mode].
 
 [mode]: https://nodejs.org/api/stream.html#stream_object_mode
 
@@ -20,15 +20,15 @@ var map = require('async-map-stream');
 vinylFs
     .src('src/**')
     .pipe(map(function (file) {
-        // do something async
+        // make observations
         return Observable.just(file);
     }))
     .pipe(map(function (file) {
-        // do something async
+        // make promises
         return Promise.resolve(file);
     }))
     .pipe(map(function (file, cb) {
-        // do something async
+        // kick it old-school
         cb(null, file);
     }))
     .pipe(vinylFs.dest('dist'));
@@ -36,14 +36,14 @@ vinylFs
 
 ## API
 
-### `map([options,] transformFunction [, flushFunction]) : TransformStream`
+### `map([options,] transform [, flush]) : TransformStream`
 
 See the [`through2`][through2] documentation for all possible options and arguments.
 
 [through2]: http://npm.im/through2
 
-#### transformFunction(data [, cb])
-#### flushFunction([cb])
+#### transform(data [, cb])
+#### flush([cb])
 
 See the [`async-done`][done] documentation for all possible method signatures and return types.
 
