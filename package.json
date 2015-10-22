@@ -1,0 +1,38 @@
+{
+  "name": "async-map-stream",
+  "version": "1.0.0",
+  "description": "A version of map-stream with support for callbacks, promises, observables and streams.",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shannonmoeller/through2-obj.git"
+  },
+  "keywords": [
+    "through",
+    "through2",
+    "async",
+    "done",
+    "promise",
+    "observable",
+    "streams"
+  ],
+  "author": "Shannon Moeller <me@shannonmoeller.com> (http://shannonmoeller.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shannonmoeller/through2-obj/issues"
+  },
+  "homepage": "https://github.com/shannonmoeller/through2-obj#readme",
+  "dependencies": {
+    "async-done": "^1.1.1",
+    "stream-array": "^1.1.1",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.2.0",
+    "es6-promise": "^3.0.2",
+    "rx": "^4.0.6"
+  }
+}
