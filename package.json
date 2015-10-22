@@ -1,6 +1,6 @@
 {
   "name": "async-map-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A version of map-stream with support for callbacks, promises, observables and streams.",
   "main": "index.js",
   "scripts": {
