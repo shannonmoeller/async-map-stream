@@ -71,7 +71,7 @@ Licensed under [MIT](http://shannonmoeller.com/mit.txt)
 [amazon-url]:    https://www.amazon.com/gp/registry/wishlist/1VQM9ID04YPC5?sort=universal-price
 [coveralls-img]: http://img.shields.io/coveralls/shannonmoeller/async-map-stream/master.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/shannonmoeller/async-map-stream
-[downloads-img]: http://img.shields.io/npm/dm/tunic.svg?style=flat-square
+[downloads-img]: http://img.shields.io/npm/dm/async-map-stream.svg?style=flat-square
 [gitter-img]:    http://img.shields.io/badge/gitter-join_chat-1dce73.svg?style=flat-square
 [gitter-url]:    https://gitter.im/togajs/toga
 [npm-img]:       http://img.shields.io/npm/v/tunic.svg?style=flat-square
