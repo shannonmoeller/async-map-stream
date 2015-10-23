@@ -13,6 +13,7 @@ module.exports = function asyncMapStream(options, transform, flush) {
 	function done(cb, err, chunk) {
 		if (err) {
 			cb(err);
+			return;
 		}
 
 		if (chunk !== undefined) {

@@ -8,7 +8,7 @@ var map = require('../index'),
 
 function noop() {}
 
-test('transform with a callback', function (assert) {
+test('callbacks', function (assert) {
 	assert.plan(2);
 
 	streamArray([{ foo: 'bar' }])
@@ -22,11 +22,14 @@ test('transform with a callback', function (assert) {
 		.pipe(map(function (obj, cb) {
 			assert.same(obj, { foo: 'bar', baz: 'bat' });
 
-			cb(null, obj);
+			cb();
+		}))
+		.pipe(map(function () {
+			assert.fail();
 		}));
 });
 
-test('transform with an observable', function (assert) {
+test('observables', function (assert) {
 	assert.plan(2);
 
 	streamArray([{ foo: 'bar' }])
@@ -40,11 +43,14 @@ test('transform with an observable', function (assert) {
 		.pipe(map(function (obj) {
 			assert.same(obj, { foo: 'bar', baz: 'bat' });
 
-			return observable.return(obj);
+			return observable.return();
+		}))
+		.pipe(map(function () {
+			assert.fail();
 		}));
 });
 
-test('transform with a promise', function (assert) {
+test('promises', function (assert) {
 	assert.plan(2);
 
 	streamArray([{ foo: 'bar' }])
@@ -58,11 +64,14 @@ test('transform with a promise', function (assert) {
 		.pipe(map(function (obj) {
 			assert.same(obj, { foo: 'bar', baz: 'bat' });
 
-			return promise.resolve(obj);
+			return promise.resolve();
+		}))
+		.pipe(map(function () {
+			assert.fail();
 		}));
 });
 
-test('transform with a stream', function (assert) {
+test('streams', function (assert) {
 	assert.plan(2);
 
 	streamArray([{ foo: 'bar' }])
@@ -79,16 +88,19 @@ test('transform with a stream', function (assert) {
 			assert.same(obj, { foo: 'bar', baz: 'bat' });
 
 			return streamArray([]).on('end', function () {
-				cb(null, obj);
+				cb();
 			});
+		}))
+		.pipe(map(function () {
+			assert.fail();
 		}));
 });
 
-test('support flush functions', function (assert) {
+test('flush', function (assert) {
 	assert.plan(2);
 
 	streamArray([])
-		.pipe(map(noop, function (cb) {
+		.pipe(map({}, noop, function (cb) {
 			assert.pass();
 
 			cb(null, { foo: 'bar' });
@@ -96,6 +108,23 @@ test('support flush functions', function (assert) {
 		.pipe(map(function (obj, cb) {
 			assert.same(obj, { foo: 'bar' });
 
-			cb(null, obj);
+			cb();
+		}))
+		.pipe(map(function () {
+			assert.fail();
 		}));
+});
+
+test('error', function (assert) {
+	assert.plan(2);
+
+	streamArray([{ foo: 'bar' }])
+		.pipe(map({}, function (obj, cb) {
+			assert.pass();
+
+			cb('dangit');
+		}))
+		.on('error', function (err) {
+			assert.is(err, 'dangit');
+		});
 });
