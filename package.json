@@ -38,6 +38,6 @@
   "scripts": {
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint index.js test/*.js",
-    "test": "istanbul cover ./node_modules/.bin/ava"
+    "test": "istanbul cover test/asyncMapStream.js"
   }
 }
