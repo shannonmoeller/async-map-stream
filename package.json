@@ -30,12 +30,14 @@
     "ava": "^0.2.0",
     "coveralls": "^2.11.4",
     "es6-promise": "^3.0.2",
+    "eslint": "^1.7.3",
     "istanbul": "^0.4.0",
     "rx": "^4.0.6",
     "stream-array": "^1.1.1"
   },
   "scripts": {
     "coveralls": "cat coverage/lcov.info | coveralls",
-    "test": "istanbul cover ./node_modules/.bin/ava -- test/*.js"
+    "lint": "eslint index.js test/*.js",
+    "test": "istanbul cover ./node_modules/.bin/ava"
   }
 }

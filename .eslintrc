@@ -1,6 +1,4 @@
 {
-  "parser": "babel-eslint",
-
   "env": {
     "amd": false,
     "browser": false,

@@ -4,8 +4,6 @@
 
 A version of `map-stream` that supports callbacks, promises, observables, and streams. Always uses [`objectMode`][mode].
 
-[mode]: https://nodejs.org/api/stream.html#stream_object_mode
-
 ## Install
 
 ```
@@ -40,14 +38,10 @@ vinylFs
 
 See the [`through2`][through2] documentation for all possible options and arguments.
 
-[through2]: http://npm.im/through2
-
 #### transform(data [, cb])
 #### flush([cb])
 
-See the [`async-done`][done] documentation for all possible method signatures and return types.
-
-[done]: http://npm.im/async-done
+See the [`async-done`][done] documentation for all possible arguments and return types.
 
 ## Test
 
@@ -66,6 +60,10 @@ Standards for this project, including tests, code coverage, and semantics are en
 © 2015 Shannon Moeller <me@shannonmoeller.com>
 
 Licensed under [MIT](http://shannonmoeller.com/mit.txt)
+
+[done]:          http://npm.im/async-done
+[mode]:          https://nodejs.org/api/stream.html#stream_object_mode
+[through2]:      http://npm.im/through2
 
 [amazon-img]:    https://img.shields.io/badge/amazon-tip_jar-yellow.svg?style=flat-square
 [amazon-url]:    https://www.amazon.com/gp/registry/wishlist/1VQM9ID04YPC5?sort=universal-price
