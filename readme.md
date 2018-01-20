@@ -57,9 +57,7 @@ Standards for this project, including tests, code coverage, and semantics are en
 
 ----
 
-© 2015 Shannon Moeller <me@shannonmoeller.com>
-
-Licensed under [MIT](http://shannonmoeller.com/mit.txt)
+MIT © [Shannon Moeller](http://shannonmoeller.com)
 
 [done]:          http://npm.im/async-done
 [mode]:          https://nodejs.org/api/stream.html#stream_object_mode
